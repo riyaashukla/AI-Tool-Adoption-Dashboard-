@@ -13,7 +13,7 @@ st.markdown("Explore AI tool usage across different countries, industries, and c
 # Upload or load dataset
 @st.cache_data
 def load_data():
-    df = pd.read_csv('ai_adoption_dataset.csv')
+    df = pd.read_csv('ai_adoption_dataset.csv.gz')
     return df
 
 df = load_data()
